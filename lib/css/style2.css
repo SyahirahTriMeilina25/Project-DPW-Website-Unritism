@@ -1,0 +1,260 @@
+/* Template CSS */
+:root {
+  --primary: #06A3DA;
+  --secondary: #34AD54;
+  --light: #EEF9FF;
+  --dark: #091E3E;
+  --font-family-sans-serif: "Poppins", sans-serif;
+}
+
+html {
+  font-family: "Poppins";
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+  font-family: 'Poppins';
+  position: relative;
+  margin-left: 25px;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  transition: .5s;
+}
+
+/* .bg-header {
+  background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+  background-size: cover;
+} */
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+  padding: 20px 0;
+  color: #EEF9FF;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary);
+}
+
+.navbar-dark .navbar-brand h1 {
+  color: #FFFFFF;
+}
+
+.navbar-dark .navbar-toggler {
+  color: var(--light) !important;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 991px) {
+  #segitiga-navbar {
+    height: 0px;
+    width: 0px;
+    margin-left: -12px;
+    margin-top: 8px;
+    border-top: solid 22px #091E3E;
+    border-left: solid 43px transparent;
+    border-right: solid 43px transparent;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .navbar-kotak-logo {
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+    position: relative;
+    left: 0;
+    z-index: 99;
+    background-color: #091E3E;
+  }
+
+  .navbar-kotak-logo .img-responsive{
+    height: 75px;
+  }
+  .title-prodi h4 {
+    font-size: large;
+  }
+}
+
+@media (max-width: 990px) {
+  .sticky-top.navbar-dark {
+    position: relative;
+    background: #061429;
+    padding-left: 30px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .sticky-top.navbar-dark .navbar-nav .nav-link {
+      padding: 10px 0;
+      color: var(--light);
+  }
+
+  .navbar-dark .navbar-brand h1 {
+      color: var(--primary);
+  }
+}
+
+.title-prodi h4{
+  margin: 18px;
+}
+
+@media (min-width: 992px) {
+  .navbar-dark {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid rgba(256, 256, 256, .1);
+      z-index: 999;
+  }
+  
+  .sticky-top.navbar-dark {
+      position: fixed;
+      background:#061429;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 2px;
+      bottom: -1px;
+      left: 50%;
+      background: var(--primary);
+      transition: .5s;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover::before,
+  .navbar-dark .navbar-nav .nav-link.active::before {
+      width: 100%;
+      left: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.nav-contact::before {
+      display: none;
+  }
+
+  .sticky-top.navbar-dark .navbar-brand h1 {
+      color: var(--primary);
+  }
+}
+
+.link-animated a {
+  transition: 0.5s;
+}
+
+.link-animated a:hover {
+  padding-left: 10px;
+}
+
+.count-digit {
+  margin: 5px 0px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+}
+.count-title {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+  
+  .blog-item .blog-img img  {
+      transition: .5s;
+  }
+  
+  .blog-item:hover .blog-img img {
+      transform: scale(1.15);
+  }
+
+  /*** Carousel ***/
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+}
+  
+  /*** Section Title ***/
+  .section-title::before {
+    position: absolute;
+    content: "";
+    align-items: center;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: var(--primary);
+    border-radius: 2px;
+  }
+  
+  .section-title.section-title-sm::before {
+    width: 100%;
+    height: 3px;
+  }
+  
+  .section-title::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 5px;
+    bottom: 0px;
+    background: #FFFFFF;
+    -webkit-animation: section-title-run 5s infinite linear;
+    animation: section-title-run 5s infinite linear;
+  }
+  
+  .section-title.section-title-sm::after {
+    width: 4px;
+    height: 3px;
+  }
+  
+  .section-title.text-center::after {
+    -webkit-animation: section-title-run-center 5s infinite linear;
+    animation: section-title-run-center 5s infinite linear;
+  }
+  
+  .section-title.section-title-sm::after {
+    -webkit-animation: section-title-run-sm 5s infinite linear;
+    animation: section-title-run-sm 5s infinite linear;
+  }
+
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+  
+  @-webkit-keyframes section-title-run {
+    0% {left: 0; } 50% { left : 100%; } 100% { left: 0; }
+  }
+  
+  @-webkit-keyframes section-title-run-center {
+    0% { left: 0%; margin-left: -75px; } 50% { left : 100%; margin-left: 45px; } 100% { left: 0%; margin-left: -75px; }
+  }
+  
+  @-webkit-keyframes section-title-run-sm {
+    0% {left: 0; } 50% { left : 100%; } 100% { left: 0; }
+  }
+  
+  @media (min-width: 767.98px) {
+    .footer-about {
+        margin-bottom: -75px;
+    }
+  }

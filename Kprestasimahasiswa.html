@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestasi Mahasiswa</title>
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="lib/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> -->
+
+  <!-- Template Stylesheet -->
+  <link href="lib/css/style2.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+
+<style>
+
+
+
+a {
+  color: #06A3DA;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #06A3DA;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.gtco-container {
+  max-width: 1100px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row-mt-15em {
+  margin-top: 15em;
+}
+@media screen and (max-width: 768px) {
+  .row-mt-15em {
+    margin-top: 7em;
+  }
+}
+
+.mt-sm {
+  margin-top: 6em;
+}
+@media screen and (max-width: 768px) {
+  .mt-sm {
+    margin-top: 3em;
+  }
+}
+
+.row-pb-md {
+  padding-bottom: 4em !important;
+}
+
+.row-pb-sm {
+  padding-bottom: 2em !important;
+}
+
+
+.js .animate-box {
+  opacity: 0;
+}
+
+
+.gtco-flex {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+
+.fh5co-card-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+  bottom: 0;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  -ms-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.18);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fh5co-card-item figure {
+  height: 240px;
+  overflow: hidden;
+  z-index: 12;
+  position: relative;
+}
+.fh5co-card-item figure .overlay {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+}
+.fh5co-card-item figure .overlay i {
+  z-index: 12;
+  color: #fff;
+  font-size: 30px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fh5co-card-item img {
+  z-index: 8;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.fh5co-card-item .fh5co-text {
+  padding: 0px 10px 10px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 22;
+}
+.fh5co-card-item .fh5co-text:before {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  left: 0;
+  width: 103%;
+  margin-left: -4px;
+  height: 50px;
+  z-index: -1;
+  content: "";
+  background: #fff;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.fh5co-card-item .fh5co-text h4 {
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  color: #157a9f;
+}
+.fh5co-card-item .fh5co-text span {
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+.fh5co-card-item .fh5co-text p {
+  color: #000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.fh5co-card-item:hover, .fh5co-card-item:focus {
+  bottom: 7px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+}
+.fh5co-card-item:hover img, .fh5co-card-item:focus img {
+  -webkot-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .macbook-wrap img {
+    max-width: 100%;
+  }
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+</style>
+
+
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+  <!-- Spinner Start -->
+  <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid" style="background-color: #091E3E;">
+    <nav class="navbar navbar-expand-lg px-5 d-none d-lg-block">
+      <div class="row gx-0">
+        <div class="col-lg-8 text-lg-end ms-auto mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center" style="height: 45px;">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://unri.ac.id/" style="color: #ffffff;"> Universitas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://ft.unri.ac.id/" style="color: #ffffff;"> Fakultas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://ee.ft.unri.ac.id/" style="color: #ffffff;"> Jurusan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://informatika.ft.unri.ac.id/wp-content/uploads/Brosur-TI-2021.pdf" style="color: #ffffff;"> Unduh Brosur</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://pmb.unri.ac.id/" style="color: #ffffff;"> Pendaftaran</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+</div>
+  <!-- Topbar End -->
+
+  <!-- Navbar & Carousel Start -->
+  <div class="container-fluid position-relative p-0">
+    <nav id="botnav" class="navbar navbar-expand-lg navbar-dark px-3 py-0">
+      <div style="display: flex; justify-content: space-between">
+        <div class="navbar-kotak-logo">
+          <a href="index.html">
+            <img
+              src="Asset/logounriputih.png"
+              alt="Universitas Riau"
+              class="img-responsive"
+            />
+          </a>
+          <div class="d-none d-lg-block" id="segitiga-navbar"></div>
+        </div>
+        <div class="title-prodi">
+          <h4>
+            PROGRAM STUDI <br />
+            S1 TEKNIK <br />
+            INFORMATIKA
+          </h4>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="index.html" class="nav-item nav-link ">Beranda</a>
+          <!-- Dropdown Profil -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Profil
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a href="sejarah.html" class="dropdown-item">Sejarah</a>
+              </li>
+              <li>
+                <a href="visidanmisi.html" class="dropdown-item"
+                  >Visi & Misi</a
+                >
+              </li>
+              <li><a href="tujuan.html" class="dropdown-item">Tujuan</a></li>
+              <li>
+                <a href="sasaran.html" class="dropdown-item">Sasaran</a>
+              </li>
+              <li>
+                <a href="strategi.html" class="dropdown-item">Strategi</a>
+              </li>
+              <li>
+                <a href="akreditasi.html" class="dropdown-item">Akreditasi</a>
+              </li>
+              <li><a href="dosen.html" class="dropdown-item">Dosen</a></li>
+              <li>
+                <a href="tenagakpd.html" class="dropdown-item"
+                  >Tenaga Kependidikan</a
+                >
+              </li>
+              <li>
+                <a href="mikrotikakademik.html" class="dropdown-item">Mikrotik Academy</a>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#laboratorium"
+                >
+                  Laboratorium &raquo;
+                </button>
+                <ul class="collapse" id="laboratorium">
+                  <li>
+                    <a class="dropdown-item" href="labjarkom.html"
+                      >Lab. Jaringan Komputer</a
+                    >
+                  </li>
+                  <li>
+                    <a href="laprpl.html" class="dropdown-item"
+                      >Lab. Rekayasa Perangkat Lunak</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- Dropdown Akademik -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLinkRight"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Akademik
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLinkRight"
+            >
+              <li>
+                <a class="dropdown-item" href="kurikulum.html">Kurikulum</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="jadwalkuliah.html"
+                  >Jadwal Kuliah</a
+                >
+              </li>
+              <li>
+                <a href="kalenderakademik.html" class="dropdown-item"
+                  >Kalender Akademik</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/1_UQTu_WxTVI8I07f9XS3eHWTVP-PPV-Y"
+                  class="dropdown-item"
+                  >RPS</a
+                >
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#tracerStudy"
+                >
+                  Tracer Study &raquo;
+                </button>
+                <ul class="collapse" id="tracerStudy">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://drive.google.com/open?id=1UYZwySIeqpyxSBateBZWbia6V8wjg4tO&authuser=informatika%40eng.unri.ac.id&usp=drive_fs"
+                      >Tracer Study 2022</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#layananKp"
+                >
+                  Layanan KP &raquo;
+                </button>
+                <ul class="collapse" id="layananKp">
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NDY4MjEwMDg2MjQz/details"
+                      class="dropdown-item"
+                      >Download Dokumen KP</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NDc1MDc3ODI0NTkx/details"
+                      class="dropdown-item"
+                      >Form Isian KP</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NTMyMjQxOTY1NTM4/details"
+                      class="dropdown-item"
+                      >Jadwal Seminar KP</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  class="dropdown-item"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#layananSkripsi"
+                >
+                  Layanan Skripsi &raquo;
+                </button>
+                <ul class="collapse" id="layananSkripsi">
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NDc1MDc3ODI0NDEz/details"
+                      class="dropdown-item"
+                      >Download Dokumen Skripsi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NDc1MDc4MTM1MzY2/details"
+                      class="dropdown-item"
+                      >Form Isian Skripsi</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://classroom.google.com/u/0/c/MTIwOTM4MDc3MzNa/m/NTMyMjQxOTY1Mjc5/details"
+                      class="dropdown-item"
+                      >Jadwal SEMPRO/ Sidang SKRIPSI</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://sitei.ft.unri.ac.id/" class="dropdown-item"
+                  >SITEI (Akademik)</a
+                >
+              </li>
+            </ul>
+          </li>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLinkRight"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              >Galeri
+            </a>
+            <div class="dropdown-menu m-0">
+              <a href="foto.html" class="dropdown-item">Foto</a>
+              <a href="video.html" class="dropdown-item">Video</a>
+              <a href="virtualtour.html" class="dropdown-item"
+                >Virtual Tour</a
+              >
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              id="navbarDropdownMenuLinkRight"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              >Kategori
+            </a>
+            <div class="dropdown-menu m-0">
+              <a href="kategoriberita1.html" class="dropdown-item">Berita</a>
+              <a href="kategorikegiatan1.html" class="dropdown-item">Event</a>
+              <a href="kategoriposter.html" class="dropdown-item">Poster</a>
+              <a href="Kprestasimahasiswa.html" class="dropdown-item"
+                >Prestasi Mahasiswa</a
+              >
+            </div>
+          </div>
+          <a href="kontak.html" class="nav-item nav-link">Kontak</a>
+        </div>
+        <butaton
+          type="button"
+          class="btn text-primary ms-3"
+          data-bs-toggle="modal"
+          data-bs-target="#searchModal"
+          ><i class="fa fa-search"></i
+        ></butaton>
+      </div>
+    </nav>
+  </div>
+    <!-- Navbar End -->
+	
+
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+          <div class="modal-header border-0">
+              <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center">
+              <div class="input-group" style="max-width: 600px;">
+                  <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                  <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Full Screen Search End -->
+
+<!-- Inner bg -->
+<div class="container-fluid bg-primary bg-header py-5 " style="margin-bottom: 0px;">
+	<div class="row py-5">
+		<div class="col-12 pt-lg-5 mt-lg-5 text-center">
+			<h1 class="display-4 text-white animated zoomIn">Prestasi Mahasiswa</h1>
+			
+		</div>
+	</div>
+  </div>
+        
+	<div class="gtco-section pt-5" style="position: relative; z-index: 50;">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2 class="open Sans-font" style="color: #091E3E;"></h2>
+					</div>
+			</div>
+			<div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa1.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/mockuppp.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Tri Murniati dan Syahirah Tri Meilina Berhasil Mendapatkan Juara 3 Pemilihan Design Mockup terbaik untuk Redesign Website Teknik Informatika Unri</h5>
+                  <p >BY DIAN RAMADHANI</p>
+                  <p>29/03/23</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa2.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/k1.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h5>
+                  <p >BY DIAN RAMADHANI</p>
+                  <p>12/10/22</p>
+						</div>
+					</a>
+				</div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa3.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/4pm-dzikriA.jpeg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Dzikri Armansyah; Mahasiswa Teknik Informatika UNRI Juara 1 Bujang Dara Kampar</h5>
+                            <p>BY SALHAZAN NASUTION</p>
+                            <p>02/07/19</p>
+                        </div>
+					</a>
+				</div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa4.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/3pm-attur-budar.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Hakim Ata Attaturk; Mahasiswa Teknik Informatika UNRI Juara 4 Bujang Dara Pekanbaru</h5>
+                            <p>BY SALHAZAN NASUTION</p>
+                            <p>18/05/19</p>
+                        </div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa5.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/2pm-magang-PTPN-V.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Mahasiswa Teknik Informatika UNRI ikuti Program Magang Mahasiswa Bersertifikat (PMMB) di PTPN V</h5>
+                            <p>BY SALHAZAN NASUTION</p>
+                            <p>22/02/19</p>
+                        </div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa6.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/5pm-lomba-instruktur-komputer-1.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Abu Hanifah; Mahasiswa Teknik Informatika UNRI Juara 1 Lomba Instruktur Komputer Provinsi Riau dan Harapan 3 Tingkat Nasional</h5>
+                            <p>BY SALHAZAN NASUTION</p>
+                            <p>19/10/18</p>
+                        </div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa7.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="http://informatika.ft.unri.ac.id/wp-content/uploads/2017/12/lomba-poster-2017-2.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Tim Universitas Riau 10 Delegasi Terbaik di Ajang Lomba Poster Nasional.</h5>
+                  <p>BY SALHAZAN NASUTION</p>
+                  <p>12/11/17</p>
+              </div>
+					</a>
+				</div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="presmahasiswa8.html" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="Asset/tim-formatif-UR2.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h5 style="text-align: justify;">Tim FORMATIF Universitas Riau Raih 10 Besar Nasional Web Design Competition di BINUS University</h5>
+                  <p>BY SALHAZAN NASUTION</p>
+                  <p>11/11/17</p>
+              </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+	<!-- </div> -->
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	
+	<script src="js/moment.min.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<!-- Footer -->
+  <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s" style="position: relative; z-index: 50;">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4" >
+                  <img src="Asset/logounriputih.png" alt="" style="width: 60%; height:auto">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h4 class="text-light mb-0">Kontak</h4>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Gedung C lantai 2 Fakultas Teknik Universitas Riau Kampus Binawidya Jl. HR Soebrantas KM. 12,5 Simpang Baru, Binawidya.</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">informatika@eng.unri.ac.id</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">(+62761)66596</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square me-2" href="https://wa.me/6276166596"><i class="fab fa-whatsapp fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square me-2" href="https://web.facebook.com/informatics.unri/?_rdc=1&_rdr"><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square me-2" href="https://id.linkedin.com/school/universitas-riau-unri-/?trk=public_profile_topcard-school"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-primary btn-square" href="https://instagram.com/informatika_ur?igshid=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram fw-normal"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h4 class="text-light mb-0">S1 Teknik Informatika</h4>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="kategoriberita1.html"><i class="bi bi-arrow-right text-primary me-2"></i>Berita</a>
+                            <a class="text-light mb-2" href="kategorikegiatan1.html"><i class="bi bi-arrow-right text-primary me-2"></i>Event</a>
+                            <a class="text-light mb-2" href="kategoriposter.html"><i class="bi bi-arrow-right text-primary me-2"></i>Poster Mahasiswa</a>
+                            <a class="text-light mb-2" href="Kprestasimahasiswa.html"><i class="bi bi-arrow-right text-primary me-2"></i>Prestasi Mahasiswa</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h4 class="text-light mb-0">Link Terkait</h4>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                          <a class="text-light mb-2" href="https://sitei.ft.unri.ac.id/"><i class="bi bi-arrow-right text-primary me-2"></i>SITEI(Akademik)</a>
+                            <a class="text-light mb-2" href="https://kemahasiswaan.unri.ac.id/news/category/Beasiswa"><i class="bi bi-arrow-right text-primary me-2"></i>Beasiswa</a>
+                            <a class="text-light mb-2" href="https://iconeei.id/"><i class="bi bi-arrow-right text-primary me-2"></i>Konferensi Internasional</a>
+                            <a class="text-light mb-2" href="https://drive.google.com/open?id=1UYZwySIeqpyxSBateBZWbia6V8wjg4tO&authuser=informatika%40eng.unri.ac.id&usp=drive_fs"><i class="bi bi-arrow-right text-primary me-2"></i>Tracer Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Copyright -->
+<div class="container-fluid text-white" style="background: #061429;">
+    <div class="container text-center">
+        <div class="row justify-content-end">
+            <div class="col-lg-8 col-md-6">
+                <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                    <p class="mb-0">&copy; Copyright All Rights Reserved 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- Copyright -->
+	<!-- End Footer -->
+  
+	
+	<!-- Back to Top -->
+	<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+  
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="lib/wow/wow.min.js"></script>
+	<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+	<script>
+	  // Spinner
+	  var spinner = function () {
+		  setTimeout(function () {
+			  if ($('#spinner').length > 0) {
+				  $('#spinner').removeClass('show');
+			  }
+		  }, 1);
+	  };
+	  spinner();
+	  
+	// Back to top button
+	$(window).scroll(function () {
+		  if ($(this).scrollTop() > 100) {
+			  $('.back-to-top').fadeIn('slow');
+		  } else {
+			  $('.back-to-top').fadeOut('slow');
+		  }
+	  });
+	  $('.back-to-top').click(function () {
+		  $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+		  return true;
+	  });
+  
+	// Initiate the wowjs
+	new WOW().init();
+  
+	// Sticky Navbar
+$(window).scroll(function () {
+        if ($(window).width() > 991) {
+          // Tambahkan kondisi lebar layar
+          if ($(this).scrollTop() > 45) {
+            $(".navbar").addClass("sticky-top");
+            $(".title-prodi h4").css("position", "static"); // Hapus properti 'position'
+          } else {
+            $(".navbar").removeClass("sticky-top");
+            $(".title-prodi h4").css("position", "relative"); // Tambahkan properti 'position' kembali
+          }
+        } else {
+          if ($(this).scrollTop() > 45) {
+            $(".navbar").addClass("sticky-top");
+          } else {
+            $(".navbar").removeClass("sticky-top shadow-sm");
+          }
+        }
+      });
+    const titleProdi = document.querySelector(".title-prodi h4");
+      titleProdi.style.color = "#fff"; // Warna teks default
+	  
+	  // Dropdown di mouse hover
+	  const $dropdown = $(".dropdown");
+	  const $dropdownToggle = $(".dropdown-toggle");
+	  const $dropdownMenu = $(".dropdown-menu");
+	  const showClass = "show";
+	  
+	  $(window).on("load resize", function() {
+		  if (this.matchMedia("(min-width: 992px)").matches) {
+			  $dropdown.hover(
+			  function() {
+				  const $this = $(this);
+				  $this.addClass(showClass);
+				  $this.find($dropdownToggle).attr("aria-expanded", "true");
+				  $this.find($dropdownMenu).addClass(showClass);
+			  },
+			  function() {
+				  const $this = $(this);
+				  $this.removeClass(showClass);
+				  $this.find($dropdownToggle).attr("aria-expanded", "false");
+				  $this.find($dropdownMenu).removeClass(showClass);
+			  }
+			  );
+		  } else {
+			  $dropdown.off("mouseenter mouseleave");
+		  }
+	  });
+  </script>
+	</body>
+</html>
+
